@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet " href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css "
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p " crossorigin="anonymous " />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- navber -->
+<nav class="navbar navbar-dark navbar-expand-md fixed-top p-2" id="header">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-5 fs-1 f1" href="./index.html">Reef</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-right" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" aria-current="page" href="./index.html">HOTEL</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hotels</a>
+          <ul class="dropdown-menu color1">
+            <li><a class="nav-link text-white text-center" href="./index.html">Luxe Hotel</a></li>
+            <li><a class="nav-link text-white text-center" href="./index.html">Deluxe Hotel</a></li>
+            <li><a class="nav-link text-white text-center" href="./index.html">King Hotel</a></li>
+            <li><a class="nav-link text-white text-center" href="./index.html">Five Star Hotel</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" href="./services.html">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" href="./blogs.html">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fw-bold" href="./login.html">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- background Image scroll -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="./images/slider1_black.png" class="d-block w-100 het1" alt="...">
+      <div class="position-absolute top-50 start-50 translate-middle">
+      <div class="col-12 text-center text-white">
+        <h3 class="text-white line1">BORA HOTEL</h3>
+        <h1 class="font1 display-4">RESERVE ROOM FOR FAMILY VACATAION</h1>
+        <button type="button" class="btn text-white color1">BOOK NOW</button>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/slider2_black.png" class="d-block w-100 het1" alt="...">
+      <div class="position-absolute top-50 start-50 translate-middle">
+      <div class="col-12 text-center text-white">
+        <h3 class="text-white line1">DELUXE HOTEL</h3>
+        <h1 class="font1 display-4">Make Your Vacation Comfortable</h1>
+        <button type="button" class="btn btn-black text-white color1">BOOK NOW</button>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/slider3_black.png" class="d-block w-100 het1" alt="...">
+      <div class="position-absolute top-50 start-50 translate-middle">
+      <div class="col-12 text-center text-white">
+        <h3 class="text-white line1">LUXE HOTEL</h3>
+        <h1 class="font1 display-4">A Best Place To Enjoy Your Life</h1>
+        <button type="button" class="btn btn-black color1 text-white">BOOK NOW</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+<!-- Boder of check IN and OUT -->
+  <div class="container position-absolute bottom-0 start-50 translate-middle-x color1 ">
+  <form action="save-hotel-booking.php" method="post">
+    <div class="d-flex justify-content-center p-2 M3">
+      <div class="p-2 col-md-3">
+          <label class="text-white ms-2 me-3">Hotel</label>
+          <select id="Select" name="hotel" class="form-select color1 text-white">
+            <option value="Luxe Hotel">Luxe Hotel</option>
+            <option value="Delux Hotel">Delux Hotel</option>
+            <option value="Bora Hotel">Bora Hotel</option>
+            <option value="Deluxe Hotel">Deluxe Hotel</option>
+          </select>
+      </div>
+      <div class=" p-2 col-md-3 ">
+          <label class="text-white ms-2 me-3">Check IN</label>
+          <input type="date" name="checkIn" class="het2 form-control text-white">
+      </div>
+      <div class="p-2 col-md-3">
+          <label class="text-white ms-1 me-3">Check OUT</label>
+          <input type="date" name="checkOut" class="het2 form-control text-white">     
+      </div>
+      <div class="p-2 col-md-3 d-flex justify-content-center align-items-center">
+      <button type="submit" class="btn btn-dark text-white py-4 px-5">Book Now ></button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+<!-- hotel info -->
+<div class="container mt-5 mb-5 p-5">
+  <div class="d-flex justify-content-between M4">
+    <div class="text-center mt-3 mb-3">
+    <h1>20356</h1>
+    <small class="text-muted">USER ACCESS</small> 
+    </div>
+    <div class="text-center mt-3 mb-3">
+    <h1>15501</h1>
+    <small class="text-muted">HOTEL</small> 
+    </div>
+    <div class="text-center mt-3 mb-3">
+    <h1>8200</h1>
+    <small class="text-muted">TRANSACTION</small> 
+    </div>
+    <div class="text-center mt-3 mb-3">
+    <h1>8763</h1>
+    <small class="text-muted">RATING & REVIEW</small> 
+    </div>
+  </div>
+</div>
+<!-- Featured Hotel -->
+<div class="color2">
+  <div class="container col-md-12 mt-5">
+    <div class="d-flex flex-column  text-center ">
+      <div class=" p-2 mb-5 mt-5">
+        <h1 class="text-center mb-5 mt-5 pt-5 pb-5 f2">Featured Hotel</h1>
+      </div>
+      <!-- box1 -->
+      <div class="d-flex justify-content-center M5">
+        <div class="col-md-6 mb-5">
+          <img src="./images/hotel_feture_1.jpg" class="h-100 w-100">
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="card w-100 h-100 text-start">
+            <div class="card-body mt-5 ">
+              <h5 class="card-title">Hotel Delux</h5>
+              <p class="card-text text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex est, repudiandae culpa, facilis voluptatibus quae aut pariatur earum consequuntur, cum quidem veniam. Cum aspernatur expedita, itaque earum iure voluptatum quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto repellendus ea ipsum inventore nisi laborum praesentium aliquam assumenda optio consequatur!</p><br>
+              <a href="#" class="btn btn-dark">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- box2 -->
+      <div class=" d-flex justify-content-center">
+        <div class="mb-5">
+          <div class="d-flex M7">
+            <div class="col-md-3">
+              <div class="card w-100 h-100 text-start">
+                <div class="card-body mt-5 ">
+                  <h5 class="card-title">Luxe Hotel</h5>
+                  <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita voluptatum corporis harum ad illo eaque amet omnis ullam exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto repellendus ea ipsum inventore nisi laborum praesentium aliquam assumenda optio consequatur!</p><br> 
+                  <a href="#" class="btn btn-dark">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="./images/hotel_feture_2.jpg" class="h-100 w-100">
+            </div>
+            <!-- box3 -->
+            <div class="col-md-3">
+              <div class="card w-100 h-100 text-start">
+                <div class="card-body mt-5 ">
+                  <h5 class="card-title">Hotel Bora</h5>
+                  <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita voluptatum corporis harum ad illo eaque amet omnis ullam exercitationem Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto repellendus ea ipsum inventore nisi laborum praesentium aliquam assumenda optio consequatur!</p><br> 
+                  <a href="#" class="btn btn-dark">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="./images/hotel_feture_3.jpg" class="h-100 w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>  
+</div>
+<!-- Featured Hotel2 -->
+<div class="container mt-5 p-5">
+  <h1 class="text-center pt-5 pb-3 f2">Featured Hotel</h1>
+</div>
+<!-- icons -->
+<div class="container mb-5">
+  <div class=" d-flex justify-content-center M5">
+    <div class="col-md-2 p-5 text-center">
+      <i class="fa fa-utensils fa-3x"></i>
+      <p class="f3 mt-3">Resturaunt</p>
+    </div>
+    <div class="col-md-2 p-5 text-center">
+      <i class="fa fa-glass-cheers fa-3x"></i>
+      <p class="f3 mt-3">Bar</p>
+    </div>
+    <div class="col-md-2 p-5 text-center">
+      <i class="fa fa-car-side fa-3x"></i>
+      <p class="f3 mt-3">Pick Up</p>
+    </div>
+    <div class="col-md-2 p-5 text-center">
+      <i class="fa fa-swimmer fa-3x"></i>
+      <p class="f3 mt-3">Swimming</p>
+    </div>
+    <div class="col-md-2 p-5 text-center">
+      <i class="fa fa-dumbbell fa-3x"></i>
+      <p class="f3 mt-3">Spa</p>
+    </div>
+    <div class="col-md-2 p-5 text-center">
+      <i class="fa fa-biking fa-3x"></i>
+      <p class="f3 mt-3">Gym</p>
+    </div>
+  </div>
+</div>
+<!-- spa -->
+<div class="container">
+  <div class="row">
+      <div class="d-flex justify-content-center M5">
+        <div class="col-md-6 mb-5 ">
+          <img src="./images/tab_img_5.jpg" class="h-100 w-100">
+        </div>
+        <div class="col-md-6 mb-5">
+          <div class="card w-100 h-100 text-start border-0">
+            <div class="card-body mt-5 ">
+              <p class="text-muted">World Classs</p>
+              <h2 class="card-title">Spa</h2>
+              <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi adipisci aliquid vero deserunt officiis non. Ut nemo aut doloremque aspernatur, delectus ad repudiandae in sequi laborum! Excepturi numquam fugit assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in sit iure veritatis perferendis! Atque unde quis magni omnis quos repudiandae in iste, tempora exercitationem? Quae est numquam debitis corporis?<br> <br>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur omnis non aliquid molestias odit ea recusandae, excepturi error eum necessitatibus iusto modi dolorum cumque laudantium rem soluta magni similique at!Lorem lor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- Happy Coustmer Says -->
+<div class="color3 p-5">
+  <div class="container mb-5 pb-5 ">
+    <div class="mt-5 pb-3 text-center my-5">
+      <h1 class="f2">Happy Customer Says</h1>
+    </div>
+    <div class="d-flex justify-content-between M6">
+    <div class="col-md-4 me-3 ppp">
+      <img src="./images/textbox.png" class="het3">
+      <p class="text-muted text-box">"Our stay at this hotel was nothing short of exceptional. From the moment we stepped into the lobby."</p>
+      <p class="text-white fst-italic fw-bold fs-5">Joe Doe</p>
+    </div>
+    <div class="col-md-4 me-3 ppp">
+      <img src="./images/textbox.png" class="het3">
+      <p class="text-muted text-box">"Our stay at this hotel was nothing short of exceptional. From the moment we stepped into the lobby."</p>
+      <p class="text-white fst-italic fw-bold fs-5">Rob Smith</p>
+    </div>
+    <div class="col-md-4 ppp">
+      <img src="./images/textbox.png" class="het3">
+      <p class="text-muted text-box">"Our stay at this hotel was nothing short of exceptional. From the moment we stepped into the lobby."</p>
+      <p class="text-white fst-italic fw-bold fs-5">Jahn Doe</p>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- our blogs -->
+<div class="container p-5">
+  <div class="mt-5 f2 text-center">
+    Our Blog
+  </div>
+  <div class="d-flex justify-content-center mt-5 M1">
+<!-- card1 -->
+    <div class="col-md-4 ppp">
+      <div class="card mx-3">
+        <img src="./images/image-1.jpg" class="card-img-top het4" alt="...">
+        <p class="text-box1 text-center">09<br>AUG</p>
+        <div class="card-body">
+          <p class="card-text">Most Expensive Hotel</p>
+        </div>
+      </div>
+    </div>
+<!-- card2 -->
+    <div class="col-md-4 ppp">
+      <div class="card mx-3">
+        <img src="./images/image-2.jpg" class="card-img-top het4" alt="...">
+        <p class="text-box1 text-center">09<br>AUG</p>
+        <div class="card-body">
+          <p class="card-text">Anniversary of Luxe Hotel</p>
+        </div>
+      </div>
+    </div>
+<!-- card3 -->
+    <div class="col-md-4 ppp mb-5">
+      <div class="card mx-3" >
+        <img src="./images/image-3.jpg" class="card-img-top het4" alt="...">
+        <p class="text-box1 text-center">09<br>AUG</p>
+        <div class="card-body">
+          <p class="card-text">Discover New Adventure</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+<div class="color4 p-5">
+  <div class="container mt-5 p-5">
+    <div class="row d-flex">
+      <div class="col-md-3">
+        <small class="text-muted">©2024 Responsive Hotel Site</small>
+      </div>
+      <div class="col-md-2">
+        <ul class="list">
+          <li class="text-muted">Company</li><br>
+          <li>About Us</li>
+          <li>Hotels</li>
+          <li>Customer</li>
+          <li>Care</li>
+          <li>Contact US</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <ul class="list">
+          <li class="text-muted">Our Facilities</li><br>
+          <li>Resturaunt</li>
+          <li>Bars</li>
+          <li>Pickups</li>
+          <li>Swimming</li>
+          <li>Pool</li>
+          <li>Spa</li>
+          <li>Gym</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <p class="text-muted">Subscribe</p>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ducimus</p>
+        <div class="d-flex ">
+          <form class="">
+            <input type="email" name="" placeholder="Email Address" class="border-0 form-control p-2 mb-2">
+            <button type="submit" class="btn btn-dark">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="d-flex">
+          <i class="bi bi-facebook fs-3 px-1 text-white"></i>
+          <i class="bi bi-twitter-x fs-3 px-1 text-white"></i>
+          <i class="bi bi-google fs-3 px-1 text-white"></i>
+          <i class="bi bi-linkedin fs-3 px-1 text-white"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+     $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        var header = $('#header');
+        if (scroll > 0) {
+              header.addClass('scrolled');
+        } else {
+              header.removeClass('scrolled');
+        }
+     });
+  });
+
+</script>
+</body>
+</html>

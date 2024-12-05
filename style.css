@@ -1,0 +1,187 @@
+/*index*/
+html, body{
+width:100%;
+overflow-x:hidden;
+}
+.f1{
+	 font-family: 'Tangerine';
+}
+.color1{
+	background-color: #fe5722;
+}
+.het1{
+	height: 700px;
+}
+.font1{
+	font-size:2.5vw;
+	font-family: 'Dancing Script', cursive;
+}
+.line1{
+	text-decoration-line: overline underline;
+	text-underline-position: under;
+}
+.het2{
+	background-color: #fe5722 !important;
+	/* width: 200px; */
+	border-color: white;
+}
+.color2{
+	background-color: #bdbcbc;
+	width: 100%;
+	padding-bottom: 100px;
+}
+.f2{
+	 font-family: 'Tangerine';
+	 font-size: 60px;
+	 font-weight: bold;
+}
+.f3{
+	font-size: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.color3{
+	background-color: #e65d27;
+}
+.het3{
+	height: 170px;
+	width: 93%;
+}
+.ppp{
+	 position: relative;
+}
+.text-box{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 50px;
+}
+.het4{
+	height: 234px;
+}
+.text-box1{
+    position: absolute;
+    top: 0px;
+    height: 50px;
+    width: 70px;
+    background-color: white;
+}
+.color4{
+	background-color: rgb(190, 185, 185);
+}
+.list{
+	list-style: none;
+	color: red;
+}
+
+/*services*/
+.heit1{
+	height: 600px;
+}
+.font2{
+	font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+.p1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 17px;
+}
+/*Login*/
+.img24{
+	background-image: url('./images/sea-1209607_1920.jpg');
+}
+.font3{
+	font-family: 'Tangerine', cursive;
+    font-size: 80px;
+    font-weight: bold;
+}
+.boder{
+	background: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+}
+
+.boder::placeholder{
+    color: white;
+
+}
+.p2{
+	font-family: 'Tangerine', cursive;
+	font-size: 1.75rem;
+	color: white;
+	font-weight: bold;
+}
+.mar{
+	margin-top: 301px;
+/*	background-color: white;*/
+}
+.coloo{
+	background-color: white;
+}
+.scrolled{
+  background-color: rgba(0, 0, 0, 0.15);
+
+}
+
+/*media queries*/
+
+@media screen and (max-width: 771px) {
+  .M1{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1831px) {
+  .M2{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .M3{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .M4{
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .M5{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 787px) {
+  .M6{
+    flex-direction: column;
+    width: 100%;
+    margin-block: 0px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .M7{
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    gap: 10px;
+  }
+}
